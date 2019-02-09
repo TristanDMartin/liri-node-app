@@ -1,12 +1,12 @@
+//calling out var for each input
 var keys = require("./keys.js");
-
 var request = require('request');
 var Spotify = require('node-spotify-api');
 var fs = require('fs');
 var input = process.argv;
 var action = input[2];
 var inputs = input[3];
-
+//having a action between each inputs to 
 switch (action) {
 	case "spotify-this-song":
 	spotify(inputs);
@@ -14,10 +14,6 @@ switch (action) {
 
 	case "movie-this":
 	movie(inputs);
-	break;
-
-	case "do-what-it-says":
-	doit();
 	break;
 };
 
